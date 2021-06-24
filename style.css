@@ -1,13 +1,25 @@
-body { 
-    /* height: 180vh; */
-    margin: 0px;
+/* Reset Styles */
+* {
+  box-sizing: border-box;
 }
 
-.logo img {
-  border: 1px dotted red;
-  height: 40px;
-  width: 150px;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Navigation */
 
 .main-nav{
   display: grid;
@@ -15,23 +27,49 @@ body {
   grid-template-columns: repeat(3, auto);
 }
 
+/* Centering and aligning */
+
+.middle {
+  max-width: 130ch;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 2px dotted black;
+}
+
+.align-items__center {
+  display: grid;
+  align-items: center;
+}
+
+
+/* Header */
+.logo {
+  display:grid;
+  border: 1px dotted red;
+  width: 150px;
+}
 
 .left-header-grid,
 .right-header-grid  {
   border: 1px dotted red;
 }
 
-
+input[type="button"].button2
+button #sign-up-header {
+  background-color: yellow;
+  border-left: 0px;
+}
 
 select { 
   border: 0px;
 }
 
-/* Header and body only above */
+/* Body */
 
-/* body and presets */
-
-li {
+li:not(.row_list){
   /* list-style-type: none; */
   display: inline-block;
   margin-right: 20px;
@@ -41,12 +79,9 @@ li {
 
 /* main */
 .dotted{ 
-  border: 1px dotted red;
+  border: 2px dotted red;
 }
-.two-column-grid{
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-}
+
 
 .docker {
     display: grid;
@@ -54,23 +89,9 @@ li {
     max-height: 50px;
 }
 
-
-/* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  } */
-
 .gap-divider{
   margin-bottom: 20px;
 }
-
 
 /* Deploy */
 
@@ -80,70 +101,90 @@ li {
 }
 
 .deploy-label { 
-  background-color: white;
-  margin: 10px;
-  border-radius: 15px;
+  display: grid;
+  background: white;
+  /* padding: 20px; */
+  margin: 20px;
+  border-radius: 10px;
+  gap: 8px;
 }
 
-.text-content { 
+.text-centre {
+  text-align: center;
+}
+
+.style-the-box {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.deploy-form { 
+  display: grid;
   align-items: center;
+  justify-items: center;
+  gap: 10px;
 }
 
-/*  */
+.get-started button {
+justify-items: center;
+}
+
+input [type="email"] {
+  border-radius: 1px solid yellow;
+}
+
+.create_account,
+.google button { 
+  width: 100px;
+}
+
+/* Inovative section */
+
+.inovative-logos ul {
+  height: 100%;
+
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
 
 
 
+/* Deploy */
+.two-column-grid_expand-two {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
 
+.deploy-inner-list ul{ 
+  list-style-type:circle;
+}
 
+.row_list {
+  /* margin-bottom: 10px; */
+  padding-top: 10px;
+  padding-left: 5px;
+  border-left: 1px solid gray;
+  height: 15%;
+  list-style-type: none;
+}
 
-
-.middle {
-    max-width: 130ch;
-  
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border: 2px dotted black;
-  }
-  
-/* .middle {
-    display: grid;
-    grid-template: auto
-    ". centre ."
-    1fr 800px 1fr;
-    border: 1px dotted black;
-    gap: 10px;
-    margin-bottom: 20px;
+ /* .under li {   // this is to underline list from line 202 -> "  <ul class="over-seas under"> "
+  border-bottom: 1px solid yellow;
 } */
 
+/* Grids adn colums classes */
 
+.two-column-grid{
+  /* margin: 20px; */
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
 
-/* html {
-    scroll-behavior: smooth;
-  }
-   */
-  /* Remove defaults from navigation */
-
-  
-  
-  /* Navigation styles */
-  /* .nav-list ul {
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: column;
-  } */
-  
-  /* .nav-list a,
-  .nav-list a:visited {
-    text-decoration: none;
-  
-    color: inherit;
-  } */
-  
-  /* .nav-list a:hover {
-    text-decoration: underline;
-  } */
+.three-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
   footer{
       margin-bottom: 0;
@@ -154,3 +195,35 @@ li {
     display: inline-block;
     margin-right: 20px;
   }
+
+
+
+  /* text & colors */
+
+  h1, h2 {
+    margin: 5px;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 30px;
+  }
+
+  .bannerh1 { 
+    font-size: 45px;
+    color: aliceblue;
+  }
+
+  .gray-text {
+    color: gray;
+  }
+
+.light-gray-background {
+  background-color: #e0e0e0;
+  }
+
+  .blue {
+    color: #1CB5E0;
+  }
+
+

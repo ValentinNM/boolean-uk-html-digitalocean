@@ -1,0 +1,156 @@
+body { 
+    /* height: 180vh; */
+    margin: 0px;
+}
+
+.logo img {
+  border: 1px dotted red;
+  height: 40px;
+  width: 150px;
+}
+
+.main-nav{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, auto);
+}
+
+
+.left-header-grid,
+.right-header-grid  {
+  border: 1px dotted red;
+}
+
+
+
+select { 
+  border: 0px;
+}
+
+/* Header and body only above */
+
+/* body and presets */
+
+li {
+  /* list-style-type: none; */
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0;
+}
+
+
+/* main */
+.dotted{ 
+  border: 1px dotted red;
+}
+.two-column-grid{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.docker {
+    display: grid;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } */
+
+.gap-divider{
+  margin-bottom: 20px;
+}
+
+
+/* Deploy */
+
+.blue-bg {
+  background-color: rgba(0,74,255,255);
+  background: linear-gradient(196deg, #1CB5E0 0%, #000851 100%);
+}
+
+.deploy-label { 
+  background-color: white;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.text-content { 
+  align-items: center;
+}
+
+/*  */
+
+
+
+
+
+
+
+.middle {
+    max-width: 130ch;
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 2px dotted black;
+  }
+  
+/* .middle {
+    display: grid;
+    grid-template: auto
+    ". centre ."
+    1fr 800px 1fr;
+    border: 1px dotted black;
+    gap: 10px;
+    margin-bottom: 20px;
+} */
+
+
+
+/* html {
+    scroll-behavior: smooth;
+  }
+   */
+  /* Remove defaults from navigation */
+
+  
+  
+  /* Navigation styles */
+  /* .nav-list ul {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+  } */
+  
+  /* .nav-list a,
+  .nav-list a:visited {
+    text-decoration: none;
+  
+    color: inherit;
+  } */
+  
+  /* .nav-list a:hover {
+    text-decoration: underline;
+  } */
+
+  footer{
+      margin-bottom: 0;
+      background-color: blue;
+  }
+
+  .footer-inner-list {
+    display: inline-block;
+    margin-right: 20px;
+  }

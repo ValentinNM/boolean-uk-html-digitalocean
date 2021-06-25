@@ -23,7 +23,7 @@ img {
 
 .main-nav{
   display: grid;
-  gap: 20px;
+  /* gap: 20px; */
   grid-template-columns: repeat(3, auto);
 }
 
@@ -36,7 +36,6 @@ img {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: 2px dotted black;
 }
 
 .align-items__center {
@@ -48,19 +47,30 @@ img {
 /* Header */
 .logo {
   display:grid;
-  border: 1px dotted red;
-  width: 150px;
+
+  width: 170px;
+  /* height: 30px; */
 }
 
-.left-header-grid,
-.right-header-grid  {
-  border: 1px dotted red;
+
+.sign-up-button{
+  background-color: white;
+  color: #189DCC;
+  border-color: #189DCC;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
 }
 
-input[type="button"].button2
-button #sign-up-header {
-  background-color: yellow;
-  border-left: 0px;
+/* below can be used for h2's for every section if the text size is */
+.inova { 
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.text-size { 
+  font-size: 16px;
 }
 
 select { 
@@ -70,18 +80,11 @@ select {
 /* Body */
 
 li:not(.row_list){
-  /* list-style-type: none; */
+
   display: inline-block;
   margin-right: 20px;
   padding: 0;
 }
-
-
-/* main */
-.dotted{ 
-  border: 2px dotted red;
-}
-
 
 .docker {
     display: grid;
@@ -104,13 +107,18 @@ li:not(.row_list){
   display: grid;
   background: white;
   /* padding: 20px; */
-  margin: 20px;
+  margin: 40px;
   border-radius: 10px;
-  gap: 8px;
+  /* gap: 5px; */
 }
 
 .text-centre {
   text-align: center;
+}
+
+.another_align {
+  text-align: center;
+  
 }
 
 .style-the-box {
@@ -120,22 +128,23 @@ li:not(.row_list){
 
 .deploy-form { 
   display: grid;
-  align-items: center;
-  justify-items: center;
+  margin: 15px;
+  /* grid-template: 
+  ". email ." 35px 
+  ". password ." 35px 
+  ". create_account ." 35px 
+  ". google ." 35px /
+  repeat(4, 1fr); */
+  /* padding: 10px; */
+  /* justify-items: center; */
   gap: 10px;
 }
+ 
+.deploy-form button {
+display: grid;
+border: 1px solid #1CB5E0;
+border-radius: 5px;
 
-.get-started button {
-justify-items: center;
-}
-
-input [type="email"] {
-  border-radius: 1px solid yellow;
-}
-
-.create_account,
-.google button { 
-  width: 100px;
 }
 
 /* Inovative section */
@@ -149,14 +158,46 @@ input [type="email"] {
 }
 
 
+#google_button img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+
+#google_button {
+  /* display: grid; */
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  margin-top: 10px;
+  height: 28px;
+  width: 80px;
+}
+
+form .create-acc-button{
+  background-color: #229fc2;
+  color: white;
+  height: 20px; 
+}
 
 /* Deploy */
+.para {
+  align-items: center;
+}
+
+.two-column-grid_button {
+  display: grid;
+  grid-template-columns: 90px 90px; 
+
+}
+
 .two-column-grid_expand-two {
   display: grid;
   grid-template-columns: 2fr 3fr;
 }
 
-.deploy-inner-list ul{ 
+.deploy-inner-list, .footer-inner-list, .dessigned-bottom-dots ul{ 
   list-style-type:circle;
 }
 
@@ -165,7 +206,7 @@ input [type="email"] {
   padding-top: 10px;
   padding-left: 5px;
   border-left: 1px solid gray;
-  height: 15%;
+  height: 12%;
   list-style-type: none;
 }
 
@@ -173,7 +214,32 @@ input [type="email"] {
   border-bottom: 1px solid yellow;
 } */
 
+/* Designed for devs */
+
+.droplets-img,
+.arrow-left,
+.arrow-right { 
+  display: grid;
+}
+
+.three-column-grid__adjustable {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+}
+
+/* Features your business needs */
+
+.three-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* Grids adn colums classes */
+
+
+.customers-stories { 
+  margin-bottom: 20px;
+}
 
 .two-column-grid{
   /* margin: 20px; */
@@ -181,14 +247,22 @@ input [type="email"] {
   grid-template-columns: 3fr 2fr;
 }
 
-.three-column-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+
+
+.account-creation button{ 
+  width: 100px;
 }
+
+/* Get started */
+ .account-creation {
+  margin-top: 40px;
+}
+
+/* Footer */
 
   footer{
       margin-bottom: 0;
-      background-color: blue;
   }
 
   .footer-inner-list {
@@ -196,17 +270,30 @@ input [type="email"] {
     margin-right: 20px;
   }
 
+  .four-column-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
 
+
+
+
+.navy-bg{ 
+  background-color:#000851;
+}
 
   /* text & colors */
 
   h1, h2 {
-    margin: 5px;
     text-align: center;
   }
 
-  h2 {
-    margin: 30px;
+  h3 { 
+    color: white;
+  }
+
+  .top-margin { 
+    margin-top: 40px;
   }
 
   .bannerh1 { 
